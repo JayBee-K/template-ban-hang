@@ -2,6 +2,9 @@
 }
 
 @media screen and (max-width: 991px) {
+	.contact-list .contact-item .contact-heading .contact-heading_title {
+		font-size: 1.35em;
+	}
 }
 
 @media screen and (max-width: 768px) {

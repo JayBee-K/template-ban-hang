@@ -224,4 +224,38 @@ $(function () {
 			},
 		});
 	}
+
+	if ($('#slider-articles').length) {
+		new Swiper('#slider-articles .swiper', {
+			speed: 500,
+			spaceBetween: 15,
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: true,
+			},
+			loop: false,
+			slidesPerView: 3,
+			navigation: {
+				nextEl: "#slider-articles .slider-navigation .slider-navigation_next",
+				prevEl: "#slider-articles .slider-navigation .slider-navigation_prev",
+			},
+		});
+	}
+
+	if ($('#slider-partner').length) {
+		new Swiper('#slider-partner .swiper', {
+			speed: 500,
+			spaceBetween: 15,
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: true,
+			},
+			loop: false,
+			slidesPerView: 4,
+			navigation: {
+				nextEl: "#slider-partner .slider-navigation .slider-navigation_next",
+				prevEl: "#slider-partner .slider-navigation .slider-navigation_prev",
+			},
+		});
+	}
 });
