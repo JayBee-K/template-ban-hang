@@ -416,3 +416,8 @@ input[type='number'] {
 .button-theme:hover > span {
 	transform: translateX(-2px);
 }
+
+.bg-theme {
+	background: #f6f6f6;
+}
+
