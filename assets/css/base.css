@@ -404,13 +404,14 @@ input[type='number'] {
 
 .button-theme > span {
 	transition: var(--transition-default);
-	transform: translateX(5px);
+	transform: translateX(12px);
 	display: inline-flex;
 }
 
 .button-theme:hover > i {
 	opacity: 1;
 	visibility: visible;
+	width: auto;
 }
 
 .button-theme:hover > span {
