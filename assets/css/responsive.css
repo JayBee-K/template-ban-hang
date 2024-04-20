@@ -1,12 +1,7 @@
 @media screen and (min-width: 992px) {
-	.header .header-navigation {
+	.header .header-navigation > ul{
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
-		flex-direction: column;
-	}
-
-	.header .header-navigation > ul {
 		flex-direction: row;
 		justify-content: center;
 	}
