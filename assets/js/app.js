@@ -258,4 +258,41 @@ $(function () {
 			},
 		});
 	}
+
+	if ($('#slider-featured').length) {
+		new Swiper('#slider-featured .swiper', {
+			effect: "coverflow",
+			loop: !0,
+			grabCursor: !0,
+			direction: "horizontal",
+			centeredSlides: !0,
+			speed: 800,
+			slidesPerView: 'auto',
+			loopedSlides: 4,
+			coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 1e3,
+				modifier: 1,
+				slideShadows: !0
+			},
+			breakpoints: {
+				991: {
+					slidesPerView: 'auto',
+				},
+				768: {
+					loopedSlides: 4,
+				},
+				320: {
+					slidesPerView: 1,
+				}
+			},
+			pagination: {
+				el: '#slider-featured .slider-pagination',
+				type: 'bullets',
+				bulletClass: 'slider-pagination_item',
+				clickable: true,
+			}
+		});
+	}
 });
