@@ -1,9 +1,89 @@
+@media screen and (min-width: 992px) {
+	.header .header-navigation > ul {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.header .header-navigation > ul > li > a,
+	.header .header-navigation > ul > li > button {
+		color: var(--bs-white);
+	}
+
+	.header .header-navigation > ul > li > a:hover,
+	.header .header-navigation > ul > li > button:hover {
+		background: var(--primary-hover);
+		color: var(--bs-white);
+	}
+
+	.header .header-navigation > ul > li > a:hover > i,
+	.header .header-navigation > ul > li > button:hover > i {
+		transform: rotate(180deg);
+	}
+
+	.header .header-navigation > ul > li > ul > li:hover > a,
+	.header .header-navigation > ul > li > ul > li:hover > button {
+		padding-left: 31px;
+		color: var(--primary-color);
+	}
+
+	.header .header-navigation > ul > li > ul {
+		position: absolute;
+		left: 0;
+		top: calc(100% + 10px);
+		z-index: 3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		background: var(--bs-white);
+		border-radius: 6px;
+		padding: 10px 0;
+		min-width: 220px;
+		-webkit-box-shadow: 0 0 20px 0.4px rgb(0 0 0 / 10%);
+		box-shadow: 0 0 20px 0.4px rgb(0 0 0 / 10%);
+		transition: var(--transition-default);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.header .header-navigation > ul > li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		top: 100%;
+	}
+
+}
+
 @media screen and (min-width: 992px) and (max-width: 1439px) {
 }
 
 @media screen and (max-width: 991px) {
 	.contact-list .contact-item .contact-heading .contact-heading_title {
 		font-size: 1.35em;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.slider-theme .slider-navigation .slider-navigation_button {
+		display: none;
+	}
+
+	.slider-theme .slider-pagination {
+		bottom: 10px
+	}
+	.slider-theme .slider-pagination .slider-pagination_item {
+		width: 7px;
+		height: 7px;
+	}
+	.slider-theme .slider-pagination .slider-pagination_item.swiper-pagination-bullet-active {
+		width: 25px;
 	}
 }
 
