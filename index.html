@@ -46,7 +46,7 @@
 <div id="header" class="header">
 	<div class="header-top">
 		<div class="container">
-			<div class="row g-3">
+			<div class="row">
 				<div class="col-lg-6">
 					<div class="header-link header-contact">
 						<div class="header-link_item">
@@ -63,7 +63,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 d-none d-lg-block">
 					<div class="header-link justify-content-end">
 						<div class="header-link_item">
 							<a href="" class="d-inline-flex align-middle">
@@ -97,6 +97,7 @@
 							<a href="" class="header-link_item d-inline-flex align-middle">
 								Giỏ hàng
 								<i class="fas fa-shopping-cart"></i>
+								<span class="header-link_item__number">5</span>
 							</a>
 						</div>
 					</div>
@@ -112,16 +113,25 @@
 						<img src="./assets/images/logo.png" class="img-fluid" alt="">
 					</a>
 				</div>
-				<div class="header-search">
-					<form action="">
-						<div class="header-search_item">
-							<input type="text" placeholder="Nhập từ khóa sản phẩm, danh mục..."
-							       class="form-control header-search_input">
-							<button type="submit" class="header-search_button link-default">
-								<i class="far fa-search"></i>
-							</button>
-						</div>
-					</form>
+				<div class="header-toolbar">
+					<div class="header-search">
+						<form action="">
+							<div class="header-search_item">
+								<input type="text" placeholder="Nhập từ khóa sản phẩm, danh mục..."
+								       class="form-control header-search_input">
+								<button type="submit" class="header-search_button link-default">
+									<i class="far fa-search"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="header-hamburger d-flex d-lg-none">
+						<span class="hamburger-button" id="hamburger-button">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+					</div>
 				</div>
 				<div class="header-action">
 					<div class="header-action_item">
@@ -189,6 +199,12 @@
 								</a>
 							</li>
 						</ul>
+					</div>
+					<div class="header-action_item header-action_item__cart">
+						<a href="" class="header-link_item d-inline-flex align-middle">
+							<i class="far fa-shopping-cart"></i>
+							<span class="header-link_item__number">5</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -376,7 +392,7 @@
 					Tại sao chọn Hathor Beauty?
 				</div>
 			</div>
-			<div class="row g-3 row-cols row-cols-sm-2 row-cols-lg-4">
+			<div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-4">
 				<div class="col">
 					<div class="why-card card border-0 bg-white overflow-hidden">
 						<div class="card-image position-relative overflow-hidden">
@@ -982,7 +998,7 @@
 					Tủ thuốc gia đình
 				</div>
 			</div>
-			<div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5">
+			<div class="row g-3 row-cols-2 row-cols-md-3 row-cols-xl-5">
 				<div class="col">
 					<div class="product-card card overflow-hidden bg-white">
 						<div class="card-header p-0 bg-transparent border-0 rounded-0">
