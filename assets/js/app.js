@@ -235,6 +235,17 @@ $(function () {
 			},
 			loop: false,
 			slidesPerView: 3,
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				567: {
+					loopedSlides: 2.3,
+				},
+				320: {
+					slidesPerView: 1.3,
+				}
+			},
 			navigation: {
 				nextEl: "#slider-articles .slider-navigation .slider-navigation_next",
 				prevEl: "#slider-articles .slider-navigation .slider-navigation_prev",
@@ -252,6 +263,17 @@ $(function () {
 			},
 			loop: false,
 			slidesPerView: 4,
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+				},
+				767: {
+					loopedSlides: 3.3,
+				},
+				320: {
+					slidesPerView: 2.5,
+				}
+			},
 			navigation: {
 				nextEl: "#slider-partner .slider-navigation .slider-navigation_next",
 				prevEl: "#slider-partner .slider-navigation .slider-navigation_prev",
