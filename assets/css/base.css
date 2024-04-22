@@ -331,9 +331,12 @@ input[type='number'] {
 	padding: 8px 18px;
 	font-weight: 700;
 	border-radius: 4px;
+	gap: 6px;
 	font-size: 1em;
 	border: 1px solid rgba(0, 0, 0, .05);
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -395,27 +398,13 @@ input[type='number'] {
 }
 
 .button-theme > i {
-	opacity: 0;
-	visibility: hidden;
-	transform: translateX(2px);
 	transition: var(--transition-default);
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .button-theme > span {
 	transition: var(--transition-default);
-	transform: translateX(12px);
 	display: inline-flex;
-}
-
-.button-theme:hover > i {
-	opacity: 1;
-	visibility: visible;
-	width: auto;
-}
-
-.button-theme:hover > span {
-	transform: translateX(-2px);
 }
 
 .bg-theme {

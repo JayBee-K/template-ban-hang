@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template bán hàng</title>
+	<meta name="description" content="Template bán hàng">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template bán hàng">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template bán hàng">
+	<meta property="og:image" content="./assets/images/logo.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+	      rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+	<style>
+		:root {
+			--primary-color: #00908e;
+			--primary-hover: #007a78;
+			--primary-rgb: 0, 144, 142;
+			--secondary-color: #db0008;
+			--secondary-hover: #bb0006;
+			--secondary-rgb: 219, 0, 8;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="header-link header-contact">
+						<div class="header-link_item">
+							<a href="" class="d-inline-flex align-middle">
+								<i class="fas fa-envelope"></i>
+								webdemo@gmail.com
+							</a>
+						</div>
+						<div class="header-link_item">
+							<a href="" class="d-inline-flex align-middle">
+								<i class="fas fa-phone-alt"></i>
+								0922.000.000
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 d-none d-lg-block">
+					<div class="header-link justify-content-end">
+						<div class="header-link_item">
+							<a href="" class="d-inline-flex align-middle">
+								Đăng ký đại lý
+							</a>
+						</div>
+						<div class="header-link_item">
+							<a href="" class="d-inline-flex align-middle">
+								Hỗ trợ khách hàng
+								<i class="fal fa-angle-down header-link_item__icon"></i>
+							</a>
+							<div class="header-link_dropdown">
+								<a href="" class="header-link_dropdown__item">
+									<img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid"
+									     alt="">
+									Fanpage Facebook
+								</a>
+								<a href="" class="header-link_dropdown__item">
+									<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid"
+									     alt="">
+									Hỗ trợ qua Zalo
+								</a>
+								<a href="" class="header-link_dropdown__item">
+									<img src="./assets/images/social/phone.png" class="rounded-circle img-fluid"
+									     alt="">
+									Hotline tư vấn: 0936.652.5858
+								</a>
+							</div>
+						</div>
+						<div class="header-link_item">
+							<button type="button" id="callCart" class="d-inline-flex align-middle">
+								Giỏ hàng
+								<i class="fas fa-shopping-cart"></i>
+								<span class="header-link_item__number">5</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container">
+			<div class="header-grid">
+				<div class="header-logo">
+					<a href="" class="d-inline-flex align-middle align-items-center">
+						<img src="./assets/images/logo.png" class="img-fluid" alt="">
+					</a>
+				</div>
+				<div class="header-toolbar">
+					<div class="header-toolbar_inner">
+						<div class="header-search">
+							<form action="">
+								<div class="header-search_item">
+									<input type="text" placeholder="Nhập từ khóa sản phẩm, danh mục..."
+									       class="form-control header-search_input">
+									<button type="submit" class="header-search_button link-default">
+										<i class="far fa-search"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="header-hamburger d-flex d-lg-none">
+							<span class="hamburger-button" id="hamburger-button">
+								<i></i>
+								<i></i>
+								<i></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="header-action">
+					<div class="header-action_item">
+						<a href="" class="header-action_item__link">
+							<div class="header-action_item__link--icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+									<path d="M60.85,46.11a4.74,4.74,0,0,0-2.41-3L46.07,36.7a4.71,4.71,0,0,0-6,1.37l-2,2.74a.72.72,0,0,1-.93.21,36.3,36.3,0,0,1-8-6.17,36.31,36.31,0,0,1-6.17-8,.72.72,0,0,1,.21-.93l2.73-2a4.71,4.71,0,0,0,1.37-6L20.91,5.56A4.73,4.73,0,0,0,14.09,3.8L6.32,9A7.48,7.48,0,0,0,3,15.69a37.64,37.64,0,0,0,.89,6.57C6,30.4,11.09,38.77,18.16,45.85S33.61,58,41.75,60.09a37.67,37.67,0,0,0,6.57.89l.5,0A7.48,7.48,0,0,0,55,57.69l5.18-7.77A4.73,4.73,0,0,0,60.85,46.11Zm-4,1.58L51.7,55.47A3.5,3.5,0,0,1,48.58,57a34.57,34.57,0,0,1-5.83-.77C35.29,54.29,27.57,49.6,21,43S9.72,28.71,7.78,21.25A34.54,34.54,0,0,1,7,15.42a3.47,3.47,0,0,1,1.53-3.11l7.77-5.18a.71.71,0,0,1,.4-.12l.19,0a.72.72,0,0,1,.46.37l6.4,12.37a.73.73,0,0,1-.21.92l-2.73,2a4.72,4.72,0,0,0-1.28,6.13,40.54,40.54,0,0,0,6.8,8.81,40.52,40.52,0,0,0,8.81,6.8,4.72,4.72,0,0,0,6.13-1.28l2-2.74a.73.73,0,0,1,.92-.21l12.37,6.4a.73.73,0,0,1,.27,1.05Z"></path>
+								</svg>
+							</div>
+							<div class="header-action_item__link--content">
+								<div class="header-action_item__link--sub">
+									Hotline:
+								</div>
+								<div class="header-action_item__link--title">
+									02462 757 222
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="header-action_item header-action_item__dropdown">
+						<a href="javascript:void(0)" class="header-action_item__link">
+							<div class="header-action_item__link--icon">
+								<svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+									<path clip-rule="evenodd"
+									      d="m12 3.75c-1.7949 0-3.25 1.45507-3.25 3.25s1.4551 3.25 3.25 3.25 3.25-1.45507 3.25-3.25-1.4551-3.25-3.25-3.25zm-4.75 3.25c0-2.62335 2.12665-4.75 4.75-4.75 2.6234 0 4.75 2.12665 4.75 4.75s-2.1266 4.75-4.75 4.75c-2.62335 0-4.75-2.12665-4.75-4.75zm-4 12c0-2.6234 2.12665-4.75 4.75-4.75h8c2.6234 0 4.75 2.1266 4.75 4.75v2c0 .4142-.3358.75-.75.75h-16c-.41421 0-.75-.3358-.75-.75zm4.75-3.25c-1.79493 0-3.25 1.4551-3.25 3.25v1.25h14.5v-1.25c0-1.7949-1.4551-3.25-3.25-3.25z"></path>
+								</svg>
+							</div>
+							<div class="header-action_item__link--content">
+								<div class="header-action_item__link--sub">
+									Tài khoản:
+								</div>
+								<div class="header-action_item__link--title">
+									Đăng nhập/Đăng ký
+								</div>
+							</div>
+						</a>
+						<ul class="list-unstyled mb-0">
+							<li class="header-action_dropdown__item ">
+								<a href="">
+									<i class="fas fa-user"></i>
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li class="header-action_dropdown__item ">
+								<a href="">
+									<i class="fas fa-clipboard-list"></i>
+									Lịch sử mua hàng
+								</a>
+							</li>
+							<li class="header-action_dropdown__item ">
+								<a href="">
+									<i class="fas fa-eye"></i>
+									Danh sách đã xem
+								</a>
+							</li>
+							<li class="header-action_dropdown__item ">
+								<a href="">
+									<i class="fas fa-lock-alt"></i>
+									Đổi mật khẩu
+								</a>
+							</li>
+							<li class="header-action_bottom">
+								<a href="">
+									Đăng xuất
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-action_item header-action_item__cart">
+						<button type="button" id="callCartMobile" class="d-inline-flex align-middle">
+							<i class="far fa-shopping-cart"></i>
+							<span class="header-link_item__number">5</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="header-navigation" id="header-navigation">
+				<ul>
+					<li>
+						<a href="">
+							Trang chủ
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Giới thiệu
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Danh mục sản phẩm
+							<i class="fal fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">
+									Muối
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Kem tái tạo hệ cơ
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Sản phẩm hỗ trợ
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Tinh dầu
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Viên uống
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							Cẩm nang sức khỏe
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Thông cáo báo chí
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Tin tức
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Tuyển dụng
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Liên hệ
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="">Trang chủ</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="">Liên hệ</a>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div class="section-page">
+
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-4">
+				<div class="footer-item">
+					<div class="footer-logo">
+						<a href="" class="d-inline-flex align-middle">
+							<img src="./assets/images/logo.png" class="img-fluid mw-auto" alt="">
+						</a>
+					</div>
+					<div class="footer-name">
+						CÔNG TY TNHH THƯƠNG MẠI THUỐC ABC
+					</div>
+					<div class="footer-contact">
+						<div class="footer-contact_item">
+							<i class="fas fa-user-headset"></i>
+							Dược sỹ tư vấn 24/7:
+							<a href="" class="d-inline-flex">
+								0903.333xxx (7h30-22h)
+							</a>
+						</div>
+						<div class="footer-contact_item">
+							<i class="fas fa-phone-alt"></i>
+							Gọi khiếu nại:
+							<a href="" class="d-inline-flex">
+								0941 333xxx (7h30-22h)
+							</a>
+						</div>
+						<div class="footer-contact_item">
+							<i class="fas fa-envelope"></i>
+							Email:
+							<a href="" class="d-inline-flex">
+								webdemo@gmail.com
+							</a>
+						</div>
+						<div class="footer-contact_item">
+							<i class="fas fa-globe"></i>
+							Website:
+							<a href="" class="d-inline-flex">
+								www.webdemo.com
+							</a>
+						</div>
+						<div class="footer-contact_item">
+							<i class="fas fa-map-marker-alt"></i>
+							Trụ sở chính:
+							<a href="" class="d-inline-flex">
+								Lương Quy, Xuân Nộn, Đông Anh, Hà Nội.
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="footer-item footer-decor">
+					<div class="row g-4">
+						<div class="col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									HỖ TRỢ KHÁCH HÀNG
+								</div>
+								<div class="footer-list">
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Hướng dẫn mua hàng
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Chính sách đổi trả
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Giao hàng & thanh toán
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Chính sách tích điểm
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Chính sách bảo mật thông tin
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Quy định đăng bình luận
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Điều khoản sử dụng
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-item">
+								<div class="footer-title">
+									VỀ CHÚNG TÔI
+								</div>
+								<div class="footer-list">
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Giới thiệu
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Thông tin tuyển dụng
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Lời hứa thương hiệu
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Khách hàng nói về chúng tôi
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Câu chuyện Phương Chính
+									</a>
+									<a href="" class="footer-list_item d-inline-flex align-middle">
+										Liên hệ
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="footer-item">
+					<div class="footer-text">
+						Tổng đài tư vấn
+						<a href="" class="text-danger fw-bold">
+							0999 999 xxx
+						</a>
+						(7:30 - 19:00)
+					</div>
+					<div class="footer-text">
+						Gọi khiếu nại
+						<a href="" class="text-danger fw-bold">
+							0999 999 xxx
+						</a>
+						(7:30 - 19:00)
+					</div>
+					<div class="footer-social">
+						<a href="" class="footer-social_item">
+							<img src="./assets/images/social/facebook.png"
+							     class="rounded-circle img-fluid"
+							     alt="">
+						</a>
+						<a href="" class="footer-social_item">
+							<img src="./assets/images/social/zalo.png"
+							     class="rounded-circle img-fluid"
+							     alt="">
+						</a>
+						<a href="" class="footer-social_item">
+							<img src="./assets/images/social/youtube.png"
+							     class="rounded-circle img-fluid"
+							     alt="">
+						</a>
+						<a href="" class="footer-social_item">
+							<img src="./assets/images/social/tiktok.png"
+							     class="rounded-circle img-fluid"
+							     alt="">
+						</a>
+					</div>
+					<div class="footer-images">
+						<div class="footer-images_items">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/bocongthuong.png" height="60px" class="mw-100" alt="">
+							</a>
+						</div>
+						<div class="footer-images_items">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/dmca.png" height="40px" class="mw-100" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-cart is-product" id="floatingCart">
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/1.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/2.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/3.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/4.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/5.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/1.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/2.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/3.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/4.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-item align-items-start gap-10px hstack">
+							<div class="card-image flex-shrink-0">
+								<a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+									<img src="./assets/images/product/5.png"
+									     class="w-100 img-fluid transition-default" alt="">
+								</a>
+							</div>
+							<div class="card-content flex-fill">
+								<a href="" class="card-title limit">
+									Viên Uống Bổ Sung Vitamin Khoáng Chất Multivit Daglig, viên Uống Bổ Sung Vitamin
+									Khoáng Chất Multivit Daglig
+								</a>
+								<div class="hstack gap-8px justify-content-between">
+									<div class="card-quantity w-50 flex-fill">
+										<div class="card-text">
+											Số lượng
+										</div>
+										<div class="card-group hstack flex-nowrap quantityGroup">
+											<button disabled
+											        class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="0">
+												<i class="fal fa-minus"></i>
+											</button>
+											<input type="text"
+											       class="form-control card-quantity_input quantityInput"
+											       value="1">
+											<button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton"
+											        data-type="1">
+												<i class="fal fa-plus"></i>
+											</button>
+										</div>
+									</div>
+									<div class="card-desc w-50 flex-fill text-end">
+										<div class="card-price">
+											6.950.000₫
+										</div>
+										<div class="card-clear">
+											<button class="link-default buttonDelete">Xóa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href=""
+					   class="button-theme button-theme_primary w-100">
+						<span>
+							Thanh toán
+						</span>
+						<i class="fal fa-angle-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

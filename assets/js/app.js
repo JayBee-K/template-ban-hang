@@ -118,6 +118,144 @@ const handleStickHeader = function () {
 	});
 }
 
+const handleCart = function () {
+	const floatingCart = $('#floatingCart');
+
+	if (floatingCart.length) {
+		/***
+		 * Xử lý đóng mở giỏ hàng
+		 * Xử lý render html product trong giỏ hàng
+		 */
+		const handleToggleCart = function (hasProduct = false) {
+			const btnCall = $('#callCart');
+			const btnCallMobile = $('#callCartMobile');
+			const btnClose = $('#closeCart');
+			const floatingOverlay = $('#floatingOverlay');
+			const body = $('body');
+
+			btnCall.add(btnCallMobile).click(function () {
+				body.addClass('is-cart');
+			});
+
+			btnClose.add(floatingOverlay).click(function () {
+				body.removeClass('is-cart');
+			});
+
+			if (hasProduct == true) {
+				const htmlProduct = `<div class="card-item align-items-start gap-10px hstack">
+                            <div class="card-image flex-shrink-0">
+                                <a href="" class="d-inline-flex align-middle ratio ratio-16x9">
+                                    <img src="./assets/images/course/course-1.webp"
+                                         class="w-100 img-fluid transition-default" alt="">
+                                </a>
+                            </div>
+                            <div class="card-content flex-fill">
+                                <a href="" class="card-title limit">
+                                    Lớp Tiếng Anh 11-12 chất lượng Việt Nam
+                                </a>
+                                <div class="hstack gap-8px justify-content-between">
+                                    <div class="card-quantity w-50 flex-fill">
+                                        <div class="card-text">
+                                            Số lượng
+                                        </div>
+                                        <div class="card-group hstack flex-nowrap quantityGroup">
+                                            <button disabled
+                                                    class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton" data-type="0">
+                                                <i class="fal fa-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control card-quantity_input quantityInput" value="1">
+                                            <button class="link-default hstack justify-content-center flex-shrink-0 card-quantity_btn quantityButton" data-type="1">
+                                                <i class="fal fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-desc w-50 flex-fill text-end">
+                                        <div class="card-price">
+                                            6.950.000₫
+                                        </div>
+                                        <div class="card-clear">
+                                            <button class="link-default buttonDelete">Xóa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+				const listProduct = $('#cardList');
+
+				listProduct.append(htmlProduct)
+
+				body.addClass('is-cart');
+				floatingCart.addClass('is-product');
+				handleDeleteProductCart();
+			}
+		}
+
+		/***
+		 * Xử lý nút thêm sản phẩm vào giỏ hàng
+		 */
+		const handleAddProductCart = function () {
+			const buttonAdds = $('.buttonCart');
+			if (buttonAdds.length) {
+				buttonAdds.click(function () {
+					handleToggleCart(true);
+				})
+			}
+		}
+
+
+		/***
+		 * Xử lý nút xóa sản phẩm khỏi giỏ hàng
+		 */
+		const handleDeleteProductCart = function () {
+			const buttonDeletes = $('.buttonDelete');
+			buttonDeletes.click(function () {
+				const buttonDelete = $(this);
+				const itemProduct = buttonDelete.closest('.card-item');
+				itemProduct.fadeOut(function () {
+					itemProduct.remove();
+
+					if (floatingCart.find('#cardList .card-item').length === 0) {
+						floatingCart.removeClass('is-product');
+					}
+				});
+			})
+		}
+
+		const handleQuantityProduct = function () {
+			$(document).on('click', '.quantityButton', function (e) {
+				e.stopPropagation();
+
+				let type = parseInt($(this).attr('data-type')),
+					quantityGroup = $(this).closest('.quantityGroup'),
+					quantityInput = quantityGroup.find('.quantityInput'),
+					quantityValue = parseInt(quantityInput.val());
+
+				if (!isNaN(type)) {
+					if (type === 1) {
+						quantityValue += 1;
+						if (quantityValue > 1) {
+							quantityGroup.find('.quantityButton[data-type=0]').removeAttr('disabled');
+						}
+					} else if (type === 0 && quantityValue > 1) {
+						quantityValue -= 1;
+						if (quantityValue === 1) {
+							quantityGroup.find('.quantityButton[data-type=0]').attr('disabled', 1);
+						}
+					}
+				}
+
+				quantityInput.val(quantityValue);
+			})
+		}
+
+		/***
+		 * Gọi function
+		 */
+		handleToggleCart();
+		handleAddProductCart();
+		handleQuantityProduct();
+	}
+}
 
 const handleCopyValue = function () {
 	const copyButtons = document.querySelectorAll('.button-copy');
@@ -189,7 +327,6 @@ const handleContentDetail = () => {
 	}
 }
 
-
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
@@ -197,7 +334,10 @@ $(function () {
 		handleApplyCollapse($('#header-navigation > ul'));
 		handleCallMenu();
 	})
+
 	handleStickHeader();
+	handleCart();
+
 	handleCopyValue();
 	handleInitFancybox();
 
