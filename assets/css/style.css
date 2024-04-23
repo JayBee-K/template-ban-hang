@@ -2222,3 +2222,41 @@
 	color: var(--bs-black);
 	font-weight: 700;
 }
+
+.activity-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.activity-list .activity-item {
+	border-radius: 24px;
+	background-color: var(--bs-white);
+	padding: 24px;
+	box-shadow: 0px 4px 65px rgba(0, 0, 0, 0.12);
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.activity-list .activity-item .activity-icon {
+	width: 80px;
+	flex-shrink: 0;
+}
+
+.activity-list .activity-item .activity-title {
+	font-size: 1.45em;
+	color: var(--bs-black);
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.activity-list .activity-item .activity-desc {
+	font-size: 1.075em;
+}
+
+.activity-list .activity-item:nth-child(2),
+.activity-list .activity-item:nth-child(3) {
+	margin-left: 50px;
+	margin-right: -50px;
+}
