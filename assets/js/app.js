@@ -491,7 +491,7 @@ $(function () {
 					slidesPerView: 4,
 				},
 				767: {
-					loopedSlides: 3.3,
+					slidesPerView: 3.3,
 				},
 				320: {
 					slidesPerView: 2.5,
@@ -526,7 +526,7 @@ $(function () {
 					slidesPerView: 'auto',
 				},
 				768: {
-					loopedSlides: 4,
+					slidesPerView: 4,
 				},
 				320: {
 					slidesPerView: 1,
@@ -558,11 +558,8 @@ $(function () {
 				1199: {
 					slidesPerView: 4.3,
 				},
-				991: {
-					slidesPerView: 3.3,
-				},
 				567: {
-					loopedSlides: 2.3,
+					slidesPerView: 2.3,
 				},
 				320: {
 					slidesPerView: 1.3,
