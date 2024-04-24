@@ -408,32 +408,9 @@ input[type='number'] {
 	color: var(--bs-white);
 }
 
-.button-theme > i {
-	opacity: 0;
-	visibility: hidden;
-	transition: var(--transition-default);
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 5px;
-	font-size: 1.45em;
-}
-
-.button-theme > span {
-	transition: var(--transition-default);
-	display: inline-flex;
-}
-
-.button-theme:not(.button-theme_noeffect):hover > i {
-	opacity: 1;
-	visibility: visible;
-	right: 15px;
-	color: var(--bs-white);
-}
-
-.button-theme:not(.button-theme_noeffect):hover > span {
-	transform: translateX(-4px);
-	color: var(--bs-white);
+.button-theme .fa-angle-right {
+	font-size: 1.3em;
+	transform: translateY(-1px);
 }
 
 .bg-theme {
